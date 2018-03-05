@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour {
 	public Image content;
-	public PlayerController player;
+	public CarAttribute player;
 
 
 	// Use this for initialization
@@ -20,7 +20,7 @@ public class HealthBar : MonoBehaviour {
 
 	private void HandleHealthBar()
 	{
-		content.fillAmount = Map (player.health, 100.0f);
+		content.fillAmount = Map (player.getHealth (), 100.0f);
 	}
 
 	private float Map(float Current, float Max)

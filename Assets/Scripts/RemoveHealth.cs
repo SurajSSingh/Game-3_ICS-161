@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class RemoveHealth : MonoBehaviour {
 
-	public PlayerController player;
+	public CarAttribute carAttr;
 
 	void OnTriggerStay2D (Collider2D coll){
 		if (coll.gameObject.tag == "Player") {
-			player.LoseHealth ();
+			carAttr.RemoveHealth (1.0f);
 		}
 	}
 }

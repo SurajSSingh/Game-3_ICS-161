@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class TextUpdate : MonoBehaviour {
 
-	public PlayerController player;
+	public CarAttribute carAttr;
 	public Text mainText;
 
 
 	// Update is called once per frame
 	void Update () {
 		//Updates the text based on player info
-		mainText.text = "Health: " + player.health;
+		mainText.text = "Health: " + carAttr.getHealth ().ToString ();
 	}
 }
