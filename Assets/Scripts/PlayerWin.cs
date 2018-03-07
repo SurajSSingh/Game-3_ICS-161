@@ -7,7 +7,7 @@ public class PlayerWin : MonoBehaviour {
 	public CountDownTimer timer;
 
 	void OnTriggerEnter2D (Collider2D coll){
-		if (coll.gameObject.tag == "Player") {
+		if (coll.CompareTag("Player")) {
 			timer.TimerStop ();
 		}
 	}

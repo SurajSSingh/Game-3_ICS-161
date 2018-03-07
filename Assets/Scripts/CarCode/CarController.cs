@@ -16,7 +16,7 @@ public class CarController : MonoBehaviour {
 	[SerializeField]
 	private float driftFactorSlippy = 1; //How fast the sideways speed diminishes when slipping 
 	[SerializeField]
-	private float maxStickyVelocity = 3f;//Cut off point of traction
+	private float maxStickyVelocity = 3.5f;//Cut off point of traction
 	//float minSlippyVelocity = 1.5f;
 
 	// Use this for initialization

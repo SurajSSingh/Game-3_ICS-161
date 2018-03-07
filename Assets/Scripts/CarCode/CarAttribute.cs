@@ -16,6 +16,9 @@ public class CarAttribute : MonoBehaviour {
 	private string itemOne = ""; //Item 1 of the car
 	[SerializeField]
 	private string itemTwo = ""; //Item 2 of the car
+	[SerializeField]
+	private int lives = 3;
+
 
 
 	// Use this for initialization
@@ -25,13 +28,12 @@ public class CarAttribute : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 
 	public void RemoveHealth (float amount){
 		this.healthCar -= amount;
 		if(this.healthCar <= 0){
-			SceneManager.LoadScene ("GameWorld");
+			SceneManager.LoadScene ("SingleGameWorld");
 		}
 	}
 
