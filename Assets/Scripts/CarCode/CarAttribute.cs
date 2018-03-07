@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarAttribute : MonoBehaviour {
 	//This holds the attributes of a specific car
@@ -29,6 +30,9 @@ public class CarAttribute : MonoBehaviour {
 
 	public void RemoveHealth (float amount){
 		this.healthCar -= amount;
+		if(this.healthCar <= 0){
+			SceneManager.LoadScene ("GameWorld");
+		}
 	}
 
 	public float getHealth (){

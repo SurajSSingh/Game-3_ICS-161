@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class RemoveHealth : MonoBehaviour {
 
-	public CarAttribute carAttr;
-
 	void OnTriggerStay2D (Collider2D coll){
-		if (coll.gameObject.tag == "Player") {
-			carAttr.RemoveHealth (1.0f);
+		if (coll.gameObject.CompareTag("Player")) {
+			coll.GetComponentInParent<CarAttribute>().RemoveHealth(1.0f);
 		}
 	}
 }
