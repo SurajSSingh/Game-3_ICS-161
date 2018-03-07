@@ -68,6 +68,10 @@ public class CarController : MonoBehaviour {
 	Vector2 RightVelocity() {
 		return transform.right * Vector2.Dot( GetComponent<Rigidbody2D>().velocity, transform.right );
 	}
+	public float GetVelocity() {
+		Rigidbody2D rb = GetComponent<Rigidbody2D> ();
+		return 0.5f * rb.mass * Mathf.Pow(rb.velocity.magnitude, 2);
+	}
 
 
 

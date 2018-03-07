@@ -18,8 +18,10 @@ public class CarAttribute : MonoBehaviour {
 	private string itemTwo = ""; //Item 2 of the car
 	[SerializeField]
 	private int lives = 3;
+	[SerializeField]
+	private float chash_threshold = 0.55f;
 
-
+	private float prev_velocity = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -30,9 +32,19 @@ public class CarAttribute : MonoBehaviour {
 	void Update () {
 	}
 
+	void FixedUpdate (){
+		//Check if there is a crash (or generally a large change in acceleration) and does some amount of damaage
+		float impulse = Mathf.Abs(this.GetComponentInParent<CarController> ().GetVelocity () - prev_velocity);
+		if (impulse > chash_threshold) {
+			this.healthCar-= impulse;
+		}
+		prev_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
+	}
+
 	public void RemoveHealth (float amount){
 		this.healthCar -= amount;
 		if(this.healthCar <= 0){
+			--lives;
 			SceneManager.LoadScene ("SingleGameWorld");
 		}
 	}

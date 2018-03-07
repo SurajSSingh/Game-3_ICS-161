@@ -4,16 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RestartScript : MonoBehaviour {
-	//public GameObject player;
+	public bool multiplayer = false;
 	public string loadToLevel;
+
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.R)) {
-			SceneManager.LoadScene (loadToLevel); 
-		}
 
-		if (Input.GetKey("escape") || Input.GetKeyDown(KeyCode.Q))
-			Application.Quit();
+		if (multiplayer == false) {
+			if (Input.GetKeyDown (KeyCode.R)) {
+				SceneManager.LoadScene (loadToLevel); 
+			}
+
+			if (Input.GetKey ("escape") || Input.GetKeyDown (KeyCode.Q))
+				Application.Quit ();
+		}
 	}
 }

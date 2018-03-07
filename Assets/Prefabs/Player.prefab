@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50084044949514166}
   - component: {fileID: 114323670539956882}
   - component: {fileID: 114300808315551792}
+  - component: {fileID: 114517080644687034}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -157,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1036076806398114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9199998, y: -9.88, z: 0}
+  m_LocalPosition: {x: 3.0157595, y: -9.678529, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4015278225431462}
@@ -287,6 +288,7 @@ MonoBehaviour:
   damageResistence: 1
   itemOne: 
   itemTwo: 
+  lives: 3
 --- !u!114 &114311331283801292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -379,6 +381,38 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Health
+--- !u!114 &114517080644687034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036076806398114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 133
+    i1: 57
+    i2: 138
+    i3: 17
+    i4: 198
+    i5: 171
+    i6: 68
+    i7: 172
+    i8: 8
+    i9: 192
+    i10: 244
+    i11: 153
+    i12: 49
+    i13: 185
+    i14: 10
+    i15: 213
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114540510095306626
 MonoBehaviour:
   m_ObjectHideFlags: 1
