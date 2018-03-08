@@ -10,13 +10,13 @@ public class CarController : MonoBehaviour {
 	[SerializeField]
 	private float speedForce = 2f; //How fast the car moves
 	[SerializeField]
-	private float torqueForce = -200f; //How fast the car turns (- sign because turning is inverted)
+	private float torqueForce = -150f; //How fast the car turns (- sign because turning is inverted)
 	[SerializeField]
-	private float driftFactorSticky = 0.7f; //How fast the sideways speed diminishes when car has traction 
+	private float driftFactorSticky = 0.2f; //How fast the sideways speed diminishes when car has traction 
 	[SerializeField]
-	private float driftFactorSlippy = 1; //How fast the sideways speed diminishes when slipping 
+	private float driftFactorSlippy = 0.8f; //How fast the sideways speed diminishes when slipping 
 	[SerializeField]
-	private float maxStickyVelocity = 3.5f;//Cut off point of traction
+	private float maxStickyVelocity = 1f;//Cut off point of traction
 	//float minSlippyVelocity = 1.5f;
 
 	// Use this for initialization

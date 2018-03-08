@@ -35,12 +35,13 @@ public class CarAttribute : MonoBehaviour {
 	}
 
 	void FixedUpdate (){
-		//Check if there is a crash (or generally a large change in acceleration) and does some amount of damaage
-		float impulse = Mathf.Abs(this.GetComponentInParent<CarController> ().GetVelocity () - prev_velocity);
+		//Check if there is a crash (or generally a large change in acceleration - based on current minus previous velocity) and does some amount of damaage
+		float current_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
+		float impulse = Mathf.Abs(current_velocity - prev_velocity);
 		if (impulse > crash_threshold) {
 			this.healthCar-= impulse * crash_multiplier;
 		}
-		prev_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
+		prev_velocity = current_velocity;
 	}
 
 	public void RemoveHealth (float amount){
