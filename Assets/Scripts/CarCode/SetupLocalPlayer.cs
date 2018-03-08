@@ -10,6 +10,7 @@ public class SetupLocalPlayer : NetworkBehaviour {
 		if(isLocalPlayer){
 			GetComponent<CarController> ().enabled = true;
 			GetComponent<CarAttribute> ().enabled = true;
+			GetComponentInChildren<Canvas> ().enabled = true;
 		}
 	}
 }

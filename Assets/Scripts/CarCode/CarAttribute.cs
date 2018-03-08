@@ -25,6 +25,8 @@ public class CarAttribute : MonoBehaviour {
 
 	private float prev_velocity = 0.0f;
 
+	public string sceneLoad;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -48,7 +50,7 @@ public class CarAttribute : MonoBehaviour {
 		this.healthCar -= amount;
 		if(this.healthCar <= 0){
 			--lives;
-			SceneManager.LoadScene ("SingleGameWorld");
+			SceneManager.LoadScene (sceneLoad);
 		}
 	}
 
