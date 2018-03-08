@@ -13,9 +13,7 @@ public class CameraController : MonoBehaviour {
 	void Start () 
 	{
 		//Calculate and store the offset value by getting the distance between the player's position and camera's position.
-		if (player != null) {
-			offset = transform.position - player.transform.position;
-		}
+		offset = new Vector3(0f,0f,10f);
 	}
 
 	void Update (){
@@ -32,7 +30,8 @@ public class CameraController : MonoBehaviour {
 	{
 		// Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
 		if (player != null) {
-			transform.position = player.transform.position + new Vector3(0,0,-10);
+			transform.position = player.transform.position - offset;
+
 		}
 	}
 }

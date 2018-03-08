@@ -73,6 +73,8 @@ public class CarController : MonoBehaviour {
 		return 0.5f * rb.mass * Mathf.Pow(rb.velocity.magnitude, 2);
 	}
 
-
+	public void killVelocity (){
+		this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f,0f);
+	}
 
 }

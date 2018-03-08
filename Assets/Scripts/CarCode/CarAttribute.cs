@@ -26,6 +26,7 @@ public class CarAttribute : MonoBehaviour {
 	private float prev_velocity = 0.0f;
 
 	public string sceneLoad;
+	private GameObject resetPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -40,7 +41,7 @@ public class CarAttribute : MonoBehaviour {
 		//Check if there is a crash (or generally a large change in acceleration - based on current minus previous velocity) and does some amount of damaage
 		float current_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
 		float impulse = Mathf.Abs(current_velocity - prev_velocity);
-		if (impulse > crash_threshold) {
+		if (impulse > crash_threshold && current_velocity != 0) {
 			this.healthCar-= impulse * crash_multiplier;
 		}
 		prev_velocity = current_velocity;
@@ -50,7 +51,14 @@ public class CarAttribute : MonoBehaviour {
 		this.healthCar -= amount;
 		if(this.healthCar <= 0){
 			--lives;
-			SceneManager.LoadScene (sceneLoad);
+			resetPosition = GameObject.FindGameObjectWithTag ("Respawn");
+			if (sceneLoad == "" && resetPosition != null) { 
+				this.GetComponent<CarController> ().killVelocity ();
+				this.transform.position = resetPosition.transform.position;
+				this.healthCar = 100f;
+			} else {
+				SceneManager.LoadScene (sceneLoad);
+			}
 		}
 	}
 

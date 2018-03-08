@@ -11,6 +11,9 @@ public class SetupLocalPlayer : NetworkBehaviour {
 			GetComponent<CarController> ().enabled = true;
 			GetComponent<CarAttribute> ().enabled = true;
 			GetComponentInChildren<Canvas> ().enabled = true;
+			Camera.main.transform.position = this.transform.position - this.transform.forward;
+			Camera.main.transform.LookAt (this.transform.position);
+			Camera.main.transform.parent = this.transform;
 		}
 	}
 }
