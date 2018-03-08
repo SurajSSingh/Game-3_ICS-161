@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4041471779878438}
   - component: {fileID: 212381564769090132}
-  - component: {fileID: 61153698867321526}
+  - component: {fileID: 58477079889392626}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: Untagged
@@ -34,15 +34,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425225612927476}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 8, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 35.840004, y: 0.79, z: 0}
+  m_LocalScale: {x: 0.77979535, y: 3.164858, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61153698867321526
-BoxCollider2D:
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!58 &58477079889392626
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -53,19 +53,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.0000009536743}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5000001
 --- !u!212 &212381564769090132
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -100,8 +90,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -99
-  m_Sprite: {fileID: 21300000, guid: 010494429b8fe432993ad66ee81a8189, type: 3}
-  m_Color: {r: 0.58823526, g: 0.14273354, b: 0.14273354, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 78f274fefdaa349a6b6b4c8699cf486a, type: 3}
+  m_Color: {r: 0.58823526, g: 0.29942727, b: 0.14273354, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
