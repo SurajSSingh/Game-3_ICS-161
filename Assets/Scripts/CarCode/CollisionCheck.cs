@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CollisionCheck : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.CompareTag ("Lava")) {
+			Debug.Log ("Lava");
+		}
+
+		if (other.gameObject.CompareTag("Player")) {
+			Debug.Log ("Impact");
+			this.GetComponent<CarAttribute> ().RemoveHealth(other.gameObject.GetComponent<CarController>().GetVelocity () 
+				* this.GetComponent<CarAttribute> ().getDamageReduction ());
+		}
 	}
 }

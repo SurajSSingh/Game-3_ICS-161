@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu Simple Ver..unity
     guid: 347268f54fa395445a4f2428f2a3034d
   - enabled: 1
-    path: Assets/Scenes/CarSelection Simple Ver..unity
-    guid: 08fe96a6640406b4c97e5f483ac71566
-  - enabled: 1
-    path: Assets/Scenes/TrackSelection Simple Ver..unity
-    guid: 4e0562268a72df0439deff75093e99cb
+    path: Assets/Scenes/SingleplayerLobby.unity
+    guid: 185aa9434b1424c5b90cc478f1c6322c
   - enabled: 1
     path: Assets/Scenes/SingleGameWorld.unity
     guid: 744df59828dc743fd9e861b9c03c6a7a

@@ -42,7 +42,7 @@ public class CarAttribute : MonoBehaviour {
 		float current_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
 		float impulse = Mathf.Abs(current_velocity - prev_velocity);
 		if (impulse > crash_threshold && current_velocity != 0) {
-			this.healthCar-= impulse * crash_multiplier;
+			RemoveHealth (impulse * crash_multiplier);
 		}
 		prev_velocity = current_velocity;
 	}
@@ -64,5 +64,8 @@ public class CarAttribute : MonoBehaviour {
 
 	public float getHealth (){
 		return this.healthCar;
+	}
+	public float getDamageReduction (){
+		return this.damageResistence;
 	}
 }

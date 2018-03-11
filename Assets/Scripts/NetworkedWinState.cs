@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class NetworkedWinState : NetworkBehaviour {
 
 	private Text infoText;
+	private bool has_won = false;
 
 	void OnTriggerEnter2D (Collider2D coll){
-		if (isServer) {
+		if (isServer && has_won == false) {
 			if (coll.CompareTag ("State")) {
 				RpcWin ();
-
+				has_won = true;
 			}
 		}
 	}
@@ -25,7 +26,6 @@ public class NetworkedWinState : NetworkBehaviour {
 				infoText = t;
 			}
 		}
-		//Debug.Log (infoText);
 		if (infoText != null) {
 			infoText.color = Color.cyan;
 			if (isLocalPlayer) {
