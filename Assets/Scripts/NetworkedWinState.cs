@@ -33,6 +33,9 @@ public class NetworkedWinState : NetworkBehaviour {
 			} else {
 				infoText.text = "You Lose";
 			}
+			if (has_won == false) {
+				has_won = true;
+			}
 		}
 	}
 }
