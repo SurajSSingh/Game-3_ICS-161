@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114184172204182018}
   - component: {fileID: 114715169255322730}
   - component: {fileID: 114158051495611070}
+  - component: {fileID: 114648234123311170}
   m_Layer: 0
   m_Name: Player(Networked)
   m_TagString: Player
@@ -485,6 +486,17 @@ MonoBehaviour:
   speedText: {fileID: 114277332862739436}
   contentHealth: {fileID: 114323676635796706}
   contentSpeed: {fileID: 114982321686770888}
+--- !u!114 &114648234123311170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1113595206358986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f57ebb40e03439d96bd921d67c86c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114715169255322730
 MonoBehaviour:
   m_ObjectHideFlags: 1

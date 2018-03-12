@@ -1197,6 +1197,7 @@ GameObject:
   - component: {fileID: 767361654}
   - component: {fileID: 767361653}
   - component: {fileID: 767361652}
+  - component: {fileID: 767361655}
   m_Layer: 5
   m_Name: SelectCar
   m_TagString: Untagged
@@ -1308,6 +1309,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767361650}
+--- !u!114 &767361655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767361650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027e5ff668ee24360bd22d277f312f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 
+  showInScene: MultiplayerLobby
 --- !u!1 &768813673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1585,7 @@ GameObject:
   - component: {fileID: 861095740}
   - component: {fileID: 861095742}
   - component: {fileID: 861095741}
+  - component: {fileID: 861095743}
   m_Layer: 5
   m_Name: CarMenuMenu
   m_TagString: Untagged
@@ -1641,6 +1656,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 861095739}
+--- !u!114 &861095743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861095739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027e5ff668ee24360bd22d277f312f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 
+  showInScene: MultiplayerLobby
 --- !u!1 &910309023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,6 +1854,26 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22418284, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120900, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478402, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478402, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_Color.g
+      value: 0.0066936575
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478402, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_Color.b
+      value: 0.9705882
+      objectReference: {fileID: 0}
+    - target: {fileID: 160802, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2239,6 +2287,7 @@ GameObject:
   - component: {fileID: 1132942419}
   - component: {fileID: 1132942421}
   - component: {fileID: 1132942420}
+  - component: {fileID: 1132942422}
   m_Layer: 5
   m_Name: TrackImage
   m_TagString: Untagged
@@ -2296,6 +2345,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1132942418}
+--- !u!114 &1132942422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132942418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027e5ff668ee24360bd22d277f312f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 
+  showInScene: MultiplayerLobby
 --- !u!1 &1164694583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,6 +2818,7 @@ GameObject:
   - component: {fileID: 1322396156}
   - component: {fileID: 1322396155}
   - component: {fileID: 1322396154}
+  - component: {fileID: 1322396157}
   m_Layer: 5
   m_Name: TrackSelect
   m_TagString: Untagged
@@ -2872,6 +2935,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1322396152}
+--- !u!114 &1322396157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322396152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027e5ff668ee24360bd22d277f312f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 
+  showInScene: MultiplayerLobby
 --- !u!1 &1374339830
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,6 +3398,7 @@ GameObject:
   - component: {fileID: 1766756564}
   - component: {fileID: 1766756566}
   - component: {fileID: 1766756565}
+  - component: {fileID: 1766756567}
   m_Layer: 5
   m_Name: Track Name
   m_TagString: Untagged
@@ -3386,6 +3463,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1766756563}
+--- !u!114 &1766756567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766756563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027e5ff668ee24360bd22d277f312f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 
+  showInScene: MultiplayerLobby
 --- !u!1 &1793857225
 GameObject:
   m_ObjectHideFlags: 0
