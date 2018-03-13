@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour {
 	void Start () 
 	{
 		//Calculate and store the offset value by getting the distance between the player's position and camera's position.
-		offset = new Vector3(0f,0f,10f);
+		offset = new Vector3(0f,-3f,10f);
 	}
 
 	void Update (){

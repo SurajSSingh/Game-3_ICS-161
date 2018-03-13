@@ -15,7 +15,7 @@ public class CarVisualizer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		healthText.text = "Health: " + GetComponentInParent<CarAttribute>().getHealth().ToString ();
+		healthText.text = "Health: " + GetComponentInParent<CarAttribute>().getHealth().ToString ("F");
 		speedText.text = GetComponentInParent<CarController>().GetVelocity().ToString ("F");
 		HandleSpeedBar ();
 		HandleHealthBar ();	

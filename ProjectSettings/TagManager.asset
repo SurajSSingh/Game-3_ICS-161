@@ -8,6 +8,8 @@ TagManager:
   - Lava
   - State
   - Screen
+  - Off-Road
+  - Spikes
   layers:
   - Default
   - TransparentFX
