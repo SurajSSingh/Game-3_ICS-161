@@ -1,9 +1,28 @@
 fileFormatVersion: 2
 guid: f41d0f9a80d44401dbe42b2ca20ca996
-timeCreated: 1520807919
+timeCreated: 1520972294
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Shield car sprite sheet_0
+    21300002: Shield car sprite sheet_1
+    21300004: Shield car sprite sheet_2
+    21300006: Shield car sprite sheet_3
+    21300008: Shield car sprite sheet_4
+    21300010: Shield car sprite sheet_5
+    21300012: Shield car sprite sheet_6
+    21300014: Shield car sprite sheet_7
+    21300016: Shield car sprite sheet_8
+    21300018: Shield car sprite sheet_9
+    21300020: Shield car sprite sheet_10
+    21300022: Shield car sprite sheet_11
+    21300024: Shield car sprite sheet_12
+    21300026: Shield car sprite sheet_13
+    21300028: Shield car sprite sheet_14
+    21300030: Shield car sprite sheet_15
+    21300032: Shield car sprite sheet_16
+    21300034: Shield car sprite sheet_17
+    21300036: Shield car sprite sheet_18
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,9 +84,293 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Shield car sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2109
+        width: 202
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1786
+        width: 203
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1786
+        width: 208
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1789
+        width: 208
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 1789
+        width: 210
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1469
+        width: 203
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1148
+        width: 202
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1148
+        width: 208
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1148
+        width: 208
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 1148
+        width: 210
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 829
+        width: 203
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 506
+        width: 203
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 506
+        width: 209
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 506
+        width: 207
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 509
+        width: 210
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 168
+        width: 203
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 168
+        width: 219
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 170
+        width: 268
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shield car sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 142
+        width: 323
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
