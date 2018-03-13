@@ -10,6 +10,8 @@ TagManager:
   - Screen
   - Off-Road
   - Spikes
+  - Meteor
+  - Misc_Obstacles
   layers:
   - Default
   - TransparentFX

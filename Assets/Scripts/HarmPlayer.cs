@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class HarmPlayer: MonoBehaviour {
 
+
 	void OnTriggerStay2D (Collider2D coll){
 		if (coll.gameObject.CompareTag("Player")) {
-			if (this.tag == "Lava") {
+			if (this.CompareTag("Lava")) {
 				coll.GetComponent<CarAttribute> ().RemoveHealth (2f);
-			}else if(this.tag == "Spikes"){
+			}else if(this.CompareTag("Spikes")){
 				coll.GetComponent<CarAttribute> ().RemoveHealth (0.5f);
 			}
 		}

@@ -10,10 +10,13 @@ public class NetworkedWinState : NetworkBehaviour {
 	private bool has_won = false;
 
 	void OnTriggerEnter2D (Collider2D coll){
+		Debug.Log ("The end is near");
+		Debug.Log (has_won);
 		if (isServer && has_won == false) {
 			if (coll.CompareTag ("State")) {
 				RpcWin ();
 				has_won = true;
+				Debug.Log ("Only one call");
 			}
 		}
 	}

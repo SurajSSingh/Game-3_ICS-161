@@ -30,7 +30,7 @@ public class CarAttribute : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		crash_threshold = 1.5f;
 	}
 	
 	// Update is called once per frame

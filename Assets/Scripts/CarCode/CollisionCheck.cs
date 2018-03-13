@@ -7,7 +7,6 @@ public class CollisionCheck : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.CompareTag("Player")) {
 			//When collided with another player
-			Debug.Log ("Impact");
 			this.GetComponent<CarAttribute> ().RemoveHealth(other.gameObject.GetComponent<CarController>().GetVelocity ()
 				* other.gameObject.GetComponent<CarAttribute> ().getDamageReduction ());
 		}

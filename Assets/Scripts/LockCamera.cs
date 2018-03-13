@@ -7,11 +7,12 @@ public class LockCamera : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (isLocalPlayer) {
-			Camera.main.transform.position = this.transform.position - this.transform.forward;
-			Camera.main.transform.LookAt (this.transform.position);
-			Camera.main.transform.parent = this.transform;
-		}
+		//To be deleted
+//		if (isLocalPlayer) {
+//			Camera.main.transform.position = this.transform.position - this.transform.forward;
+//			Camera.main.transform.LookAt (this.transform.position);
+//			Camera.main.transform.parent = this.transform;
+//		}
 	}
 
 	void Update (){
