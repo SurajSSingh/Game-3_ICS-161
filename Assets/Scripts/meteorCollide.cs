@@ -9,4 +9,9 @@ public class meteorCollide : MonoBehaviour {
 			other.gameObject.GetComponent<CarAttribute> ().RemoveHealth (1f);
 		}
 	}
+	void OnCollisionStay2D (Collision2D other){
+		if (other.gameObject.CompareTag("Player")) {
+			other.gameObject.GetComponent<CarAttribute> ().RemoveHealth (1f);
+		}
+	}
 }

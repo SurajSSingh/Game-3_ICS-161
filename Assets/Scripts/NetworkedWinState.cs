@@ -12,7 +12,7 @@ public class NetworkedWinState : NetworkBehaviour {
 	void OnTriggerEnter2D (Collider2D coll){
 		Debug.Log ("The end is near");
 		Debug.Log (has_won);
-		if (isServer && has_won == false) {
+		if (isServer) {
 			if (coll.CompareTag ("State")) {
 				RpcWin ();
 				has_won = true;
@@ -29,16 +29,14 @@ public class NetworkedWinState : NetworkBehaviour {
 				infoText = t;
 			}
 		}
-		if (infoText != null) {
+		if (infoText != null && has_won == false) {
 			infoText.color = Color.cyan;
 			if (isLocalPlayer) {
 				infoText.text = "You Win";
 			} else {
 				infoText.text = "You Lose";
 			}
-			if (has_won == false) {
-				has_won = true;
-			}
+			has_won = true;
 		}
 	}
 }
