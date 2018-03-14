@@ -27,7 +27,7 @@ public class SpeedometerUI : MonoBehaviour {
 
 	void  OnGUI (){
 		// Draw title
-		GUI.Box(new Rect(10, 10, Screen.width-20, 25), "MOVE THE MOUSE FROM LEFT TO RIGHT AND LOOK THE NEEDLES");
+		
 
 
 		// Draw the back
