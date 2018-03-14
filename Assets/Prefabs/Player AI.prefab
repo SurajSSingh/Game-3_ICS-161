@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114145576846058170}
   - component: {fileID: 114060549199753720}
   - component: {fileID: 114064615419819816}
-  - component: {fileID: 114042016585803476}
+  - component: {fileID: 114332947234788366}
   - component: {fileID: 114598134884662034}
   - component: {fileID: 114496724164555350}
   - component: {fileID: 114305268283448160}
@@ -130,61 +130,6 @@ PolygonCollider2D:
       - {x: -0.43969512, y: -1.2286062}
       - {x: 0.4479227, y: -1.2121515}
       - {x: 0.7124667, y: 0.4653349}
---- !u!114 &114042016585803476
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453170023115926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1062805814, guid: b26ce4b80a42c6441af375612ff69ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Order: 0
-  Label: Danger
-  initialized: 1
-  tabState:
-    tab0: 0
-    tab1: 0
-    tab2: 0
-    tab3: 0
-    tab4: 0
-  advancedInspector: 0
-  FilteredEnvironments:
-  - Danger
-  GameObjects: []
-  velocityGizmo:
-    Enabled: 0
-    Color: {r: 0.5, g: 0.5, b: 1, a: 1}
-    DirectionScale: 1
-    PointSize: 0.2
-  steeringFoldout: 1
-  innerRadiusGizmo:
-    Enabled: 0
-    Color: {r: 0.59607846, g: 1, b: 0.5686275, a: 1}
-  outerRadiusGizmo:
-    Enabled: 0
-    Color: {r: 0.2627451, g: 0.79607844, b: 0.24705882, a: 1}
-  radiusSteeringFoldout: 1
-  Seek:
-    TargetObjective: 1
-    MagnitudeMultiplier: 1
-    SensitivityOffset: 0
-    ValueWriting: 0
-    LayerBlending: 3
-    LayerNormalization: 0
-    ValueMapping: 2
-    UseSignificance: 1
-    UseSensorProjection: 1
-    VectorProjection: 0
-    PresetVelocity: 0
-    Prediction: 0
-    PredictionMagnitude: 0
-    InnerRadius: 0
-    OuterRadius: 50
-    RadiusMapping: 2
-    ForEachReceptor: 0
 --- !u!114 &114060549199753720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,7 +155,7 @@ MonoBehaviour:
       Unlimited: 0
       Epsilons:
       - 0
-      - 0.2
+      - 0.25
   selfObject: {fileID: 0}
   indicatorGizmo:
     Enabled: 1
@@ -285,12 +230,12 @@ MonoBehaviour:
     UseSignificance: 1
     UseSensorProjection: 1
     VectorProjection: 0
-    PresetVelocity: 1
-    Prediction: 1
+    PresetVelocity: 0
+    Prediction: 0
     PredictionMagnitude: 0
     InnerRadius: 6
     OuterRadius: 108
-    RadiusMapping: 2
+    RadiusMapping: 0
     ForEachReceptor: 0
 --- !u!114 &114145576846058170
 MonoBehaviour:
@@ -328,7 +273,66 @@ MonoBehaviour:
     TargetObjective: 0
     AngleMapping: 2
     MaxIncrease: 0.2
-    MaxAngle: 45
+    MaxAngle: 30
+--- !u!114 &114332947234788366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1453170023115926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 803436379, guid: b26ce4b80a42c6441af375612ff69ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Order: 0
+  Label: 
+  initialized: 1
+  tabState:
+    tab0: 0
+    tab1: 0
+    tab2: 0
+    tab3: 0
+    tab4: 0
+  advancedInspector: 0
+  FilteredEnvironments: []
+  GameObjects: []
+  velocityGizmo:
+    Enabled: 0
+    Color: {r: 0.5, g: 0.5, b: 1, a: 1}
+    DirectionScale: 1
+    PointSize: 0.2
+  steeringFoldout: 1
+  innerRadiusGizmo:
+    Enabled: 0
+    Color: {r: 0.59607846, g: 1, b: 0.5686275, a: 1}
+  outerRadiusGizmo:
+    Enabled: 0
+    Color: {r: 0.2627451, g: 0.79607844, b: 0.24705882, a: 1}
+  radiusSteeringFoldout: 1
+  Avoid:
+    TargetObjective: 0
+    MagnitudeMultiplier: 1
+    SensitivityOffset: 0
+    ValueWriting: 0
+    LayerBlending: 0
+    LayerNormalization: 0
+    ValueMapping: 2
+    UseSignificance: 1
+    UseSensorProjection: 1
+    VectorProjection: 0
+    PresetVelocity: 0
+    Prediction: 0
+    PredictionMagnitude: 0
+    InnerRadius: 0
+    OuterRadius: 20
+    RadiusMapping: 2
+    PlaneBend: 0
+    UseVelocity: 0
+  PlaneGizmo:
+    Enabled: 0
+    Color: {r: 0.2627451, g: 0.79607844, b: 0.24705882, a: 1}
+    PlaneSize: 5
 --- !u!114 &114496724164555350
 MonoBehaviour:
   m_ObjectHideFlags: 1

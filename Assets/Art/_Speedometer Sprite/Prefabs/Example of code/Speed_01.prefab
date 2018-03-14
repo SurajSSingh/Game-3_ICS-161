@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1784607662885836}
+  m_IsPrefabParent: 1
+--- !u!1 &1784607662885836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4473490378402594}
+  - component: {fileID: 114401110067766976}
+  m_Layer: 0
+  m_Name: Speed_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4473490378402594
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784607662885836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114401110067766976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784607662885836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8107fccd7f0d842e6b640b01a69c909b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backTex: {fileID: 2800000, guid: b805c79e347004f398112335bd75e79c, type: 3}
+  dialTex: {fileID: 2800000, guid: 5032b41eae43b42219591312d5981ea2, type: 3}
+  needleTex: {fileID: 2800000, guid: c782914ad771c4af6ad382560718e5fc, type: 3}
+  needleCache: {fileID: 2800000, guid: 23e5b1d209b5844efa9e13eaab551908, type: 3}
+  needleSizeRatio: 3
+  counterPos: {x: 0, y: 0}
+  counterSize: {x: 400, y: 400}
+  topSpeed: 140
+  stopAngle: -220
+  topSpeedAngle: 40
+  speed: 0
