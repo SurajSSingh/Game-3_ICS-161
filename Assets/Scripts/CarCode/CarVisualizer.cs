@@ -12,13 +12,23 @@ public class CarVisualizer : MonoBehaviour {
 	public Image contentHealth;
 	public Image contentSpeed;
 
+	[SerializeField]
+	private bool is_AI;
+
+	void Start (){
+//		if(this.GetComponentInParent<>()){
+//			
+//		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		healthText.text = "Health: " + GetComponentInParent<CarAttribute>().getHealth().ToString ("F");
-		speedText.text = GetComponentInParent<CarController>().GetVelocity().ToString ("F");
-		HandleSpeedBar ();
-		HandleHealthBar ();	
+		if(is_AI == false){
+			healthText.text = "Health: " + GetComponentInParent<CarAttribute>().getHealth().ToString ("F");
+			speedText.text = GetComponentInParent<CarController>().GetVelocity().ToString ("F");
+			HandleSpeedBar ();
+			HandleHealthBar ();
+		}	
 	}
 
 	private void HandleSpeedBar()

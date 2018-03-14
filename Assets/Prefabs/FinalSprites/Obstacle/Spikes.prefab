@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114737517271325500}
   - component: {fileID: 114876440614441084}
   - component: {fileID: 61096708843175980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spikes
   m_TagString: Spikes
   m_Icon: {fileID: 0}
@@ -79,7 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438a68b8604f84df38093354f16f30ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stop_threshold: 0.5
 --- !u!114 &114876440614441084
 MonoBehaviour:
   m_ObjectHideFlags: 1

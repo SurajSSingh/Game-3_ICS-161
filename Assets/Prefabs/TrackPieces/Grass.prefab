@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4661984514802948}
   - component: {fileID: 212999808583002646}
   - component: {fileID: 61409433113202860}
-  m_Layer: 0
+  - component: {fileID: 114100080143951818}
+  m_Layer: 9
   m_Name: Grass
   m_TagString: Off-Road
   m_Icon: {fileID: 0}
@@ -35,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1111022352694042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -92.19, y: -48.91, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -74.743, y: 30.255, z: 0}
+  m_LocalScale: {x: 137.5, y: 83.49506, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,6 +67,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114100080143951818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111022352694042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e327c25552043c7a8af05f6c4b58ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  change_drag: 2
 --- !u!212 &212999808583002646
 SpriteRenderer:
   m_ObjectHideFlags: 1

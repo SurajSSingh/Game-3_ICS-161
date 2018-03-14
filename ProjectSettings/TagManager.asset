@@ -12,6 +12,7 @@ TagManager:
   - Spikes
   - Meteor
   - Misc_Obstacles
+  - AI_Player
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Interest
+  - Danger
+  - Players
   - 
   - 
   - 

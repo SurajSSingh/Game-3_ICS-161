@@ -23,6 +23,9 @@ public class CarAttribute : MonoBehaviour {
 	[SerializeField]
 	private float crash_multiplier = 0.5f;
 
+	[SerializeField]
+	private bool is_AI = false;
+
 	private float prev_velocity = 0.0f;
 
 	public string sceneLoad;
@@ -31,6 +34,9 @@ public class CarAttribute : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		crash_threshold = 1.5f;
+		if (this.GetComponent<Grid> () != null) {
+			is_AI = true;
+		}
 	}
 	
 	// Update is called once per frame
@@ -39,12 +45,14 @@ public class CarAttribute : MonoBehaviour {
 
 	void FixedUpdate (){
 		//Check if there is a crash (or generally a large change in acceleration - based on current minus previous velocity) and does some amount of damaage
-		float current_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
-		float impulse = Mathf.Abs(current_velocity - prev_velocity);
-		if (impulse > crash_threshold && current_velocity != 0) {
-			RemoveHealth (impulse * crash_multiplier);
+		if (is_AI == false) {
+			float current_velocity = this.GetComponentInParent<CarController> ().GetVelocity ();
+			float impulse = Mathf.Abs (current_velocity - prev_velocity);
+			if (impulse > crash_threshold && current_velocity != 0) {
+				RemoveHealth (impulse * crash_multiplier);
+			}
+			prev_velocity = current_velocity;
 		}
-		prev_velocity = current_velocity;
 	}
 
 	public void RemoveHealth (float amount){

@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 114158051495611070}
   - component: {fileID: 114648234123311170}
   - component: {fileID: 114764586848247362}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player(Networked)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 224804462941925640}
   - component: {fileID: 222047689339364952}
   - component: {fileID: 114982321686770888}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: SpeedFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 224451440835895928}
   - component: {fileID: 222443874748702458}
   - component: {fileID: 114202346467939624}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 224226476422592756}
   - component: {fileID: 222885046342424802}
   - component: {fileID: 114350984801184844}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: HealthBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 224906777133703606}
   - component: {fileID: 222371909054320890}
   - component: {fileID: 114277332862739436}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Speed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 223226784875850430}
   - component: {fileID: 114765802158760602}
   - component: {fileID: 114098366776330838}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Player UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 224539870029553110}
   - component: {fileID: 222004926848807222}
   - component: {fileID: 114323676635796706}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: HealthFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 212938670712999542}
   - component: {fileID: 114557702240539362}
   - component: {fileID: 114271890558625630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 224281385776082286}
   - component: {fileID: 222601094021005512}
   - component: {fileID: 114822849485282090}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: SpeedBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,6 +270,7 @@ MonoBehaviour:
   lives: 3
   crash_threshold: 1.5
   crash_multiplier: 0.5
+  is_AI: 0
   sceneLoad: 
 --- !u!114 &114098366776330838
 MonoBehaviour:
@@ -487,6 +488,7 @@ MonoBehaviour:
   speedText: {fileID: 114277332862739436}
   contentHealth: {fileID: 114323676635796706}
   contentSpeed: {fileID: 114982321686770888}
+  is_AI: 0
 --- !u!114 &114648234123311170
 MonoBehaviour:
   m_ObjectHideFlags: 1

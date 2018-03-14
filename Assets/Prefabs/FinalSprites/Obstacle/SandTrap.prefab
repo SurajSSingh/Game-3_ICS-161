@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212387662930325226}
   - component: {fileID: 114488116697345912}
   - component: {fileID: 61928140322145282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SandTrap
   m_TagString: Misc_Obstacles
   m_Icon: {fileID: 0}
