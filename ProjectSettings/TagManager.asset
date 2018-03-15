@@ -13,9 +13,7 @@ TagManager:
   - Meteor
   - Misc_Obstacles
   - AI_Player
-  - Track1Nodes
-  - Track2Nodes
-  - Track3Nodes
+  - Pathway
   layers:
   - Default
   - TransparentFX

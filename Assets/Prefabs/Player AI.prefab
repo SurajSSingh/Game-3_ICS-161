@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4115695663514192}
   - component: {fileID: 212705974998695654}
   - component: {fileID: 114964352651511912}
+  - component: {fileID: 111327772185304508}
   m_Layer: 10
   m_Name: Car
   m_TagString: Untagged
@@ -46,8 +47,8 @@ GameObject:
   - component: {fileID: 114332947234788366}
   - component: {fileID: 114526471340269654}
   - component: {fileID: 114598134884662034}
-  - component: {fileID: 114496724164555350}
   - component: {fileID: 114305268283448160}
+  - component: {fileID: 114991767641203580}
   m_Layer: 10
   m_Name: Player AI
   m_TagString: AI_Player
@@ -61,8 +62,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453170023115926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4, y: 1.113116, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4, y: -9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4115695663514192}
@@ -77,7 +78,7 @@ Transform:
   m_GameObject: {fileID: 1304992003147758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4067234075817416}
   m_RootOrder: 0
@@ -126,11 +127,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.008227348, y: 1.5100889}
-      - {x: -0.72069407, y: 0.4571066}
-      - {x: -0.43969512, y: -1.2286062}
-      - {x: 0.4479227, y: -1.2121515}
-      - {x: 0.7124667, y: 0.4653349}
+    - - {x: 0, y: 2.5367384}
+      - {x: -0.6390872, y: 1.5337868}
+      - {x: -1.0268533, y: -2.2995386}
+      - {x: 1.0152988, y: -2.3110933}
+      - {x: 0.65064216, y: 1.5915589}
+--- !u!111 &111327772185304508
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304992003147758}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114060549199753720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,13 +167,13 @@ MonoBehaviour:
   - Grassy
   context:
     minObjectives: 000101
-    normObjectives: 010101
+    normObjectives: 000101
     constraintSolver:
       Unlimited: 0
       Epsilons:
       - 0
-      - 0.1
       - 0.25
+      - 0.5
   selfObject: {fileID: 0}
   indicatorGizmo:
     Enabled: 1
@@ -232,12 +247,12 @@ MonoBehaviour:
     ValueMapping: 2
     UseSignificance: 1
     UseSensorProjection: 1
-    VectorProjection: 1
+    VectorProjection: 0
     PresetVelocity: 0
     Prediction: 0
     PredictionMagnitude: 0
     InnerRadius: 6
-    OuterRadius: 108
+    OuterRadius: 144
     RadiusMapping: 0
     ForEachReceptor: 0
 --- !u!114 &114145576846058170
@@ -276,7 +291,7 @@ MonoBehaviour:
     TargetObjective: 0
     AngleMapping: 2
     MaxIncrease: 0.2
-    MaxAngle: 20
+    MaxAngle: 45
 --- !u!114 &114332947234788366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,7 +339,7 @@ MonoBehaviour:
     ValueMapping: 2
     UseSignificance: 1
     UseSensorProjection: 1
-    VectorProjection: 1
+    VectorProjection: 0
     PresetVelocity: 0
     Prediction: 0
     PredictionMagnitude: 0
@@ -337,22 +352,6 @@ MonoBehaviour:
     Enabled: 0
     Color: {r: 0.2627451, g: 0.79607844, b: 0.24705882, a: 1}
     PlaneSize: 5
---- !u!114 &114496724164555350
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453170023115926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -621085426, guid: b26ce4b80a42c6441af375612ff69ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Torque: 0.01
-  Speed: 8
-  ObjectiveAsSpeed: 0
-  Context: {fileID: 114060549199753720}
-  Body2D: {fileID: 50003157821090778}
 --- !u!114 &114526471340269654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,7 +399,7 @@ MonoBehaviour:
     ValueMapping: 2
     UseSignificance: 1
     UseSensorProjection: 1
-    VectorProjection: 1
+    VectorProjection: 0
     PresetVelocity: 0
     Prediction: 0
     PredictionMagnitude: 0
@@ -463,6 +462,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46544d80ef86045f4ba2a18b584e19c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114991767641203580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1453170023115926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0597914654dc4401809c46e25adecc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Torque: 0.001
+  Speed: 8
+  ObjectiveAsSpeed: 12
+  Context: {fileID: 114060549199753720}
+  Body2D: {fileID: 50003157821090778}
 --- !u!212 &212705974998695654
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -497,8 +512,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7dbad52a65aa94292b0fb799b717d276, type: 3}
-  m_Color: {r: 0.27205884, g: 1, b: 0.8795133, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f41d0f9a80d44401dbe42b2ca20ca996, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
