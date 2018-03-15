@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerWin : MonoBehaviour {
 
 	public CountDownTimer timer;
+	public InGameUI UI;
 	private bool has_won = false;
 
 	void OnTriggerEnter2D (Collider2D coll){
@@ -13,10 +14,15 @@ public class PlayerWin : MonoBehaviour {
 		}
 		if (coll.CompareTag("Player")) {
 			timer.TimerStop ();
-			if (has_won = false) {
-//				UI.GoWin();
+			if (has_won == false) {
 				has_won = true;
+				Invoke("Win", 0.5f);
 			}
 		}
+	}
+
+	private void Win()
+	{
+		UI.GoWin();
 	}
 }

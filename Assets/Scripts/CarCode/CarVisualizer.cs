@@ -7,10 +7,10 @@ public class CarVisualizer : MonoBehaviour {
 	//This visualizes the car based on current attributes
 
 	public Text healthText;
-	public Text speedText;
+	//public Text speedText;
 
 	public Image contentHealth;
-	public Image contentSpeed;
+	//public Image contentSpeed;
 
 	[SerializeField]
 	private bool is_AI;
@@ -29,18 +29,16 @@ public class CarVisualizer : MonoBehaviour {
 	void Update () {
 		if(is_AI == false){
 			healthText.text = "Health: " + GetComponentInParent<CarAttribute>().getHealth().ToString ("F");
-			speedText.text = GetComponentInParent<CarController>().GetVelocity().ToString ("F");
-			HandleSpeedBar ();
 			HandleHealthBar ();
 		}
 		anim.SetFloat (hashHealth,this.GetComponentInParent<CarAttribute>().getHealth());
 		anim.speed = this.GetComponentInParent<CarController> ().GetVelocity ();
 	}
 
-	private void HandleSpeedBar()
-	{
-		contentSpeed.fillAmount = Map (this.GetComponentInParent<CarController> ().GetVelocity (), 20.0f);
-	}
+//	private void HandleSpeedBar()
+//	{
+//		contentSpeed.fillAmount = Map (this.GetComponentInParent<CarController> ().GetVelocity (), 20.0f);
+//	}
 
 
 	private void HandleHealthBar()
