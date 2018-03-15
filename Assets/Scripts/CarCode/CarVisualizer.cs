@@ -16,6 +16,7 @@ public class CarVisualizer : MonoBehaviour {
 	private bool is_AI;
 
 	private Animator anim;
+	private int hashHealth = Animator.StringToHash("Health");
 
 	void Start (){
 		if(this.GetComponentInParent<Grid>() != null){
@@ -31,9 +32,9 @@ public class CarVisualizer : MonoBehaviour {
 			speedText.text = GetComponentInParent<CarController>().GetVelocity().ToString ("F");
 			HandleSpeedBar ();
 			HandleHealthBar ();
-		}	
-		anim.SetFloat ("Health",this.GetComponentInParent<CarAttribute>().getHealth());
-		anim.speed = this.GetComponentInParent<CarController> ().GetVelocity ()/15;
+		}
+		anim.SetFloat (hashHealth,this.GetComponentInParent<CarAttribute>().getHealth());
+		anim.speed = this.GetComponentInParent<CarController> ().GetVelocity ();
 	}
 
 	private void HandleSpeedBar()
