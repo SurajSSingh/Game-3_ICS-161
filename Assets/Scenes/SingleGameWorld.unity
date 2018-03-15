@@ -8622,7 +8622,6 @@ GameObject:
   - component: {fileID: 1790652081}
   - component: {fileID: 1790652080}
   - component: {fileID: 1790652079}
-  - component: {fileID: 1790652083}
   m_Layer: 5
   m_Name: Help
   m_TagString: Untagged
@@ -8712,17 +8711,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 154}
   m_SizeDelta: {x: 5000, y: 6000}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1790652083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1790652078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 438a68b8604f84df38093354f16f30ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1793012547 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4041471779878438, guid: 7a62002b728a942a1bb9b890ad1e117a,
