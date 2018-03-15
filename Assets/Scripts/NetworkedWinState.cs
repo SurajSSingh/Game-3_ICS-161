@@ -6,17 +6,16 @@ using UnityEngine.UI;
 
 public class NetworkedWinState : NetworkBehaviour {
 
+	InGameUI UI;
 	private Text infoText;
 	private bool has_won = false;
 
 	void OnTriggerEnter2D (Collider2D coll){
-		Debug.Log ("The end is near");
 		Debug.Log (has_won);
 		if (isServer) {
 			if (coll.CompareTag ("State")) {
 				RpcWin ();
 				has_won = true;
-				Debug.Log ("Only one call");
 			}
 		}
 	}
@@ -33,10 +32,22 @@ public class NetworkedWinState : NetworkBehaviour {
 			infoText.color = Color.cyan;
 			if (isLocalPlayer) {
 				infoText.text = "You Win";
+				Invoke("Win", 0.1f);
 			} else {
 				infoText.text = "You Lose";
+				Invoke("Lose", 0.1f);
 			}
 			has_won = true;
 		}
+	}
+
+	private void Win()
+	{
+		UI.GoWin();
+	}
+
+	public void Lose()
+	{
+		UI.GoDead();
 	}
 }
