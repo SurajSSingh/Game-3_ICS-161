@@ -9,7 +9,7 @@ public class Items : MonoBehaviour {
 
     }
 
-    public void ExtraArmor()
+    public void Armor()
     {
 
     }
@@ -24,19 +24,6 @@ public class Items : MonoBehaviour {
         //unguided rockets that deals a great deal of damage (Area of effect)
 
     }
-
-    public void OilSlick()
-    {
-        //makes the ground slippery, which makes the car harder to control
-
-
-    }
-    public void EMPBlast()
-    {
-        //cause the car to slightly malfunction (randomize controls, car slows down, items can be used [e.g. rocket can’t be fired, boost can’t be used, etc.])
-
-    }
-
 
     //Item Interaction:
     //Shield + Rocket: Shield protects well against rockets, rockets don’t pass through shields
