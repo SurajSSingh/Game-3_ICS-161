@@ -150,9 +150,6 @@ GameObject:
   - component: {fileID: 212938670712999542}
   - component: {fileID: 114557702240539362}
   - component: {fileID: 114271890558625630}
-  - component: {fileID: 95803003708030152}
-  - component: {fileID: 114808231047474780}
-  - component: {fileID: 114087856857963884}
   m_Layer: 10
   m_Name: Car
   m_TagString: Untagged
@@ -184,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1113595206358986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -8.7, z: 0}
+  m_LocalPosition: {x: 42.32797, y: -111.2329, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4539955164426404}
@@ -200,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 1983897011000948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 4140704470119594}
   m_RootOrder: 0
@@ -249,28 +246,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 2.5367384}
-      - {x: -0.6390872, y: 1.5337868}
-      - {x: -1.0268533, y: -2.2995386}
-      - {x: 1.0152988, y: -2.3110933}
-      - {x: 0.65064216, y: 1.5915589}
---- !u!95 &95803003708030152
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1983897011000948}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+    - - {x: 0.008227348, y: 1.5100889}
+      - {x: -0.72069407, y: 0.4571066}
+      - {x: -0.43969512, y: -1.2286062}
+      - {x: 0.4479227, y: -1.2121515}
+      - {x: 0.7124667, y: 0.4653349}
 --- !u!114 &114061416245659704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -292,25 +272,6 @@ MonoBehaviour:
   crash_multiplier: 0.5
   is_AI: 0
   sceneLoad: 
---- !u!114 &114087856857963884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1983897011000948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 0}
-  m_ParameterSendBits: 0
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
 --- !u!114 &114098366776330838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -592,38 +553,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114808231047474780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1983897011000948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 92
-    i1: 223
-    i2: 200
-    i3: 214
-    i4: 118
-    i5: 109
-    i6: 4
-    i7: 84
-    i8: 203
-    i9: 120
-    i10: 62
-    i11: 224
-    i12: 25
-    i13: 172
-    i14: 116
-    i15: 182
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!114 &114822849485282090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -728,8 +657,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 0cf6410828b0f434c9ddea25cdee22f4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7dbad52a65aa94292b0fb799b717d276, type: 3}
+  m_Color: {r: 1, g: 0.70882356, b: 0.27205884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

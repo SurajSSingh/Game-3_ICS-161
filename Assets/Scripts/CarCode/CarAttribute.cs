@@ -65,9 +65,7 @@ public class CarAttribute : MonoBehaviour {
 				this.transform.position = resetPosition.transform.position;
 				this.healthCar = 100f;
 			} else {
-//				if (is_AI == false) {
-//					SceneManager.LoadScene (sceneLoad);
-//				}
+				SceneManager.LoadScene (sceneLoad);
 			}
 		}
 	}
