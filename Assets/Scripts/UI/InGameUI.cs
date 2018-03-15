@@ -78,7 +78,8 @@ public class InGameUI : MonoBehaviour {
 
 	private bool CheckDeath()
 	{
-		if (Player.getHealth() <= 0 && !check)
+		//Check death or lose
+		if ((Player.getHealth() <= 0) && !check)
 			return true;
 		else return false;
 	}
@@ -102,7 +103,7 @@ public class InGameUI : MonoBehaviour {
 		Help.gameObject.SetActive(false);
 	}
 
-	private void GoDead()
+	public void GoDead()
 	{
 		if (PlayerPrefs.GetInt("Mode") == 1)
 			Time.timeScale = 0;

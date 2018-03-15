@@ -11,6 +11,7 @@ public class PlayerWin : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D coll){
 		if(coll.CompareTag("AI_Player")){
 			has_won = true;
+			Invoke("Lose", 0.1f);
 		}
 		if (coll.CompareTag("Player")) {
 			timer.TimerStop ();
@@ -24,5 +25,10 @@ public class PlayerWin : MonoBehaviour {
 	private void Win()
 	{
 		UI.GoWin();
+	}
+
+	public void Lose()
+	{
+		UI.GoDead();
 	}
 }
