@@ -15,10 +15,13 @@ public class CarVisualizer : MonoBehaviour {
 	[SerializeField]
 	private bool is_AI;
 
+	private Animator anim;
+
 	void Start (){
-//		if(this.GetComponentInParent<>()){
-//			
-//		}
+		if(this.GetComponentInParent<Grid>() != null){
+			is_AI = true;
+		}
+		anim = this.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -29,6 +32,8 @@ public class CarVisualizer : MonoBehaviour {
 			HandleSpeedBar ();
 			HandleHealthBar ();
 		}	
+		anim.SetFloat ("Health",this.GetComponentInParent<CarAttribute>().getHealth());
+		anim.speed = this.GetComponentInParent<CarController> ().GetVelocity ()/15;
 	}
 
 	private void HandleSpeedBar()

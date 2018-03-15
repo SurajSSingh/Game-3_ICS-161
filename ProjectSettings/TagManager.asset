@@ -13,6 +13,9 @@ TagManager:
   - Meteor
   - Misc_Obstacles
   - AI_Player
+  - Track1Nodes
+  - Track2Nodes
+  - Track3Nodes
   layers:
   - Default
   - TransparentFX
@@ -25,7 +28,7 @@ TagManager:
   - Interest
   - Danger
   - Players
-  - 
+  - Grassy
   - 
   - 
   - 
