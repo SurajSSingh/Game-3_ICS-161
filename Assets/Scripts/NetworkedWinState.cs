@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class NetworkedWinState : NetworkBehaviour {
 
-	InGameUI UI;
+	InGameUI UI = new InGameUI();
 	private Text infoText;
 	private bool has_won = false;
 
